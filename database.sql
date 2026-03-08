@@ -1,0 +1,11 @@
+CREATE TABLE projects (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+name TEXT,
+description TEXT
+);
+
+CREATE TABLE tasks (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+title TEXT,
+project_id INTEGER
+);

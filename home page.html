@@ -1,0 +1,13 @@
+<h1>ProjectHub</h1>
+
+<a href="/create">Create New Project</a>
+
+<ul>
+{% for project in projects %}
+<li>
+<a href="/project/{{project.id}}">
+{{project.name}}
+</a>
+</li>
+{% endfor %}
+</ul>
